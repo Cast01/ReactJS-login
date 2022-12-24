@@ -22,7 +22,7 @@ function App() {
 		}
 
 		Login(loginData)
-		.then((response: any) => window.alert(response.message))
+		.then(response => window.alert(response.message))
 		.catch(error => setLoginError(error.message))
 		.finally(() => setLoading(false));
 	}
